@@ -169,9 +169,9 @@ func (table *ResultsTable) WithFilter() *ResultsTable {
 		tableContainer.AddItem(filter, 3, 0, false)
 		tableContainer.AddItem(table, 0, 1, true)
 		tableContainer.AddItem(table.Pagination, 3, 0, false)
-		tableContainer.SetBorder(true)
 
 		if table.ReadOnly {
+			tableContainer.SetBorder(true)
 			tableContainer.SetTitle(" [READ-ONLY] ")
 			tableContainer.SetTitleColor(tcell.ColorLightBlue)
 		}
