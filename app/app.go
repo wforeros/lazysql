@@ -65,6 +65,13 @@ func init() {
 	}
 
 	tview.Styles = Styles.Theme
+
+	tview.Borders.HorizontalFocus = tview.BoxDrawingsLightHorizontal
+	tview.Borders.VerticalFocus = tview.BoxDrawingsLightVertical
+	tview.Borders.TopLeftFocus = tview.BoxDrawingsLightDownAndRight
+	tview.Borders.TopRightFocus = tview.BoxDrawingsLightDownAndLeft
+	tview.Borders.BottomLeftFocus = tview.BoxDrawingsLightUpAndRight
+	tview.Borders.BottomRightFocus = tview.BoxDrawingsLightUpAndLeft
 }
 
 // Context returns the application context.
